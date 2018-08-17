@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h1 class="display-4">{{ cityData.name }} weather is {{ cityData.weather[0].main }} today</h1>
+    <p class="lead"> The present temperature is {{ cityData.main.temp }} F</p>
+    <hr class="my-4">
+    <p>The high temp is {{ cityData.main.temp_max }} F and the low temp is  {{ cityData.main.temp_min }} F</p>
+    <!--<p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>-->
+    <img [src]="imagePath" alt="{{ cityData['name'] }}">
+  </div>
